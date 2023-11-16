@@ -42,7 +42,7 @@ ul {
   
 li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
   
 a {
@@ -56,10 +56,32 @@ a:hover {
     color: #8d8d8d;
 }
   
-
-
-
-
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+   
+}
+ul.dropdown li {
+    display: block;
+}
+ul.dropdown a:hover {
+    background: #888888;
+    color:#000000;
+}
+ul.dropdown {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
 
 
 

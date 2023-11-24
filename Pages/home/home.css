@@ -1,7 +1,29 @@
-.box{
-    width: 900px;
-    height: 800px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Set children in a row */
+  justify-content: space-between; /* Space between children */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.child {
+  background-color: rgb(54, 0, 38);
+  vertical-align: middle;
+  max-width: 50%; /* Responsive width */  
+  height: auto; /* Let height adjust according to content */
+  width: 100%; /* Take up full width of the parent */
+  height: 900px; /* Fixed height */
+}
+.child2 {
+  background-color: rgb(20, 0, 107);
+  vertical-align: middle;
+  max-width: 50%; /* Responsive width */  
+  height: auto; /* Let height adjust according to content */
+  width: 100%; /* Take up full width of the parent */
+  height: 900px; /* Fixed height */
+}
+

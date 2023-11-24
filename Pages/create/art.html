@@ -1,21 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="art.css">
+    <title>Drawing app</title>
     <link rel="stylesheet" href="/Pages/util/preloader.css">
     <link rel="stylesheet" href="/Pages/util/nav.css">
-    <link rel="stylesheet" href="/Pages/home/home.css">
-    <link rel="stylesheet" href="/Pages/util/footer.css">
-    
-    
 </head>
 <body>
-
-    <div id="preloader"></div>
-
     <nav class="navbar">
         <ul>
             <li><a href="/Pages/home/home.html">Home</a></li>
@@ -40,39 +33,20 @@
     </nav>
  
 
-
-
-
-
-    <div class="container">
-        <div class="content">
-            <div class='child'>child 1</div>
-            <div class='child2'>child 2</div>
+    <section class="container">
+        <div id="toolbar">
+            <h1>Draw.</h1>
+            <label for="stroke">Stroke</label>
+            <input id="stroke" name='stroke' type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name='lineWidth' type="number" value="5">
+            <button id="clear">Clear</button>
         </div>
-    </div>
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+    </section>
+    <script src="index.js"></script>
     
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>About Us</h2>
-                <p>We want every artist to have equal exposure.</p>
-                <!-- Other information about your website/company -->
-            </div>
-            <div class="footer-section contact">
-                <h2>Contact Us</h2>
-                <p>Email: somal_sukhdeep@khalsaschool.ca</p>
-                <p>Phone: 604-456-7890</p>
-                <!-- Other contact information -->
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2023 Artify.com | Designed by Sukhdeep Kaur Somal
-        </div>
-    </footer>
-
-
-
-    <script type="module" src="/Pages/util/loading.js"></script>
 </body>
-
 </html>

@@ -15,6 +15,16 @@ const seekBar = document.querySelector('.seek-bar');
 const currentTime = document.querySelector('.current-time');
 const songDuration = document.querySelector('.song-duration');
 
+
+// Inside the playPauseBtn event listener
+playPauseBtn.addEventListener("click", () => {
+    playPauseBtn.classList.toggle('pause');
+   
+    disk.classList.toggle('play');
+  
+});
+
+
 // Function to load the current song
 function loadSong(songIndex) {
     console.log('Loading song:', songIndex);
@@ -22,8 +32,13 @@ function loadSong(songIndex) {
     audio.src = song.path;
     musicName.textContent = song.name;
     artistName.textContent = song.artist;
+
+    // Remove the 'play' class to reset the animation
+    disk.classList.remove('play');
     disk.style.backgroundImage = `url(${song.cover})`;
 }
+
+
 
 // Function to update the seek bar and time display
 function updateSeekBar() {
@@ -80,3 +95,4 @@ seekBar.addEventListener("input", () => {
 
 // Update the seek bar and time display as the song plays
 audio.addEventListener("timeupdate", updateSeekBar);
+

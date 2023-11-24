@@ -59,19 +59,21 @@ a:hover {
 ul li {
     display: inline-block;
     position: relative;
+   
 }
 ul li a {
     display: block;
-    padding: 20px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     text-align: center;
    
 }
 ul.dropdown li {
     display: block;
+    background: #ffffff71;
 }
 ul.dropdown a:hover {
-    background: #888888;
+    background: #3838389c;
     color:#000000;
 }
 ul.dropdown {

@@ -104,13 +104,19 @@ body {
 }
 
 .register-link p a {
-    color:#fff
-    text-decoration none;
+    color: #fff;
+    text-decoration: none;
     margin: 20px 0 15px;
 }
+
 
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
 
 

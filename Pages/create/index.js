@@ -5,11 +5,16 @@ const ctx = canvas.getContext('2d');
 const canvasOffsetX = canvas.offsetLeft;
 const canvasOffsetY = canvas.offsetTop;
 
+const pencilButton = document.getElementById('pencil');
+const circleButton = document.getElementById('circle');
+const squareButton = document.getElementById('square');
+
 canvas.width = window.innerWidth - canvasOffsetX;
 canvas.height = window.innerHeight - canvasOffsetY;
 
 let isPainting = false;
 let lineWidth = 5;
+let currentBrush = 'pencil'; // Default brush
 
 let paths = []; // Array to store paths
 
@@ -46,8 +51,18 @@ const draw = (e) => {
     ctx.lineWidth = lineWidth;
     ctx.lineCap = 'round';
 
-    ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
-    ctx.stroke();
+    if (currentBrush === 'pencil') {
+        ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
+        ctx.stroke();
+    } else if (currentBrush === 'circle') {
+        const radius = 20; // You can adjust the radius as needed
+        ctx.beginPath();
+        ctx.arc(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY, radius, 0, Math.PI * 2);
+        ctx.stroke();
+    } else if (currentBrush === 'square') {
+        const size = 40; // You can adjust the size as needed
+        ctx.fillRect(e.clientX - canvasOffsetX - size / 2, e.clientY - canvasOffsetY - size / 2, size, size);
+    }
 };
 
 canvas.addEventListener('mouseup', () => {
@@ -61,7 +76,6 @@ canvas.addEventListener('mouseup', () => {
 
 canvas.addEventListener('mousemove', draw);
 
-// Listen for keydown event
 document.addEventListener('keydown', (e) => {
     if (e.ctrlKey && e.key === 'z') {
         e.preventDefault(); // Prevent default Ctrl+Z behavior (like browser undo)
@@ -82,3 +96,16 @@ function redrawPaths() {
         ctx.putImageData(path, 0, 0);
     });
 }
+
+pencilButton.addEventListener('click', () => {
+    currentBrush = 'pencil';
+});
+
+circleButton.addEventListener('click', () => {
+    currentBrush = 'circle';
+});
+
+squareButton.addEventListener('click', () => {
+    currentBrush = 'square';
+});
+

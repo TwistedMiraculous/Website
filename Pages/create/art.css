@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -41,9 +41,10 @@ h1 {
 }
 
 #toolbar button {
-    background-color: #1565c0;
+    background-color: #555555b6;
     border: none;
     border-radius: 4px;
     color:white;
     padding: 2px;
+
 }

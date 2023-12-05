@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="/Pages/home/home.css">
     <link rel="stylesheet" href="/Pages/util/footer.css">
     
-    
-</head>
-<body>
-
-    <div id="preloader"></div>
-
     <nav class="navbar">
         <ul>
             <li><a href="/Pages/home/home.html">Home</a></li>
@@ -29,7 +23,7 @@
             <li>
                 <a href="#">Create ▾</a>
                 <ul class="dropdown">
-                 <li><a href="#">Music</a></li>   
+                 <li><a href="/Pages/create/MusicEditor/musiceditor.html">Music</a></li>   
                  <li><a href="/Pages/create/art.html">Art</a></li>    
                 </ul>      
                </li>
@@ -38,20 +32,38 @@
             
         </ul>
     </nav>
- 
 
-
-
-
+</head>
+<body>
 
     <div class="container">
-        <div class="content">
-            <div class='child'>child 1</div>
-            <div class='child2'>child 2</div>
+
+        
+        <div class="hero"></div>
+
+        <div class="text-box">
+            <h2>Create. Sing. Enjoy.</h2>
+            <p>Artify is the app an artist needs to create breathtaking art and funky music.</p>
+        </div> 
+        <div class="parallax-container">
+            <div class="parallax-image"></div>
+            <div class="parallax-image"></div>
         </div>
+
+
+
+
     </div>
     
-    <footer class="footer">
+    
+
+    
+      
+    
+    <script type="module" src="/Pages/home/parallex.js"></script>
+    <script type="module" src="/Pages/util/loading.js"></script>
+</body>
+   <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h2>About Us</h2>
@@ -69,10 +81,5 @@
             &copy; 2023 Artify.com | Designed by Sukhdeep Kaur Somal
         </div>
     </footer>
-
-
-
-    <script type="module" src="/Pages/util/loading.js"></script>
-</body>
 
 </html>

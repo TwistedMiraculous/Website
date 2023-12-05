@@ -1,29 +1,70 @@
+*{
+  
+}
+.hero {
+ background-image: url('/Pages/images/hero.jpg');
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: center; /* Center the background image */
+ width: 100%; /* Adjust width as needed */
+ height: 100%; /* Take up full height of the parent */
+}
 .container {
-  display: flex;
-  flex-direction: column;
+ background-color: black;
+ display: flex;
+ flex-direction: column;
+ height: 100vh; /* Set container height to full viewport height */
 }
 
-.content {
-  display: flex;
-  flex-direction: row; /* Set children in a row */
-  justify-content: space-between; /* Space between children */
-  align-items: flex-start; /* Align items to the start */
+.text-box {
+ text-align: center;
+ padding: 20px;
+ font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 }
 
-.child {
-  background-color: rgb(54, 0, 38);
-  vertical-align: middle;
-  max-width: 50%; /* Responsive width */  
-  height: auto; /* Let height adjust according to content */
-  width: 100%; /* Take up full width of the parent */
-  height: 900px; /* Fixed height */
-}
-.child2 {
-  background-color: rgb(20, 0, 107);
-  vertical-align: middle;
-  max-width: 50%; /* Responsive width */  
-  height: auto; /* Let height adjust according to content */
-  width: 100%; /* Take up full width of the parent */
-  height: 900px; /* Fixed height */
+.text-box h2 {
+ color: white; /* Set heading color to white */
 }
 
+.text-box p {
+
+ color: white; /* Set paragraph color to white */
+}
+
+.parallax-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ height: 100vh;
+ overflow: hidden;
+}
+
+.parallax-image {
+ background-repeat: no-repeat;
+ position: absolute;
+ top: 50%;
+ width: 10vh;
+ opacity: 0;
+ transition: opacity 0.8s ease;
+}
+
+.parallax-image:nth-child(1) {
+ background-size: cover;
+ height: 10vh;
+ left: 40%; /* Adjust the left position for the first image */
+ transform: translate(-50%, -50%);
+ background-image: url('/Pages/images/paintbrush.png');
+}
+
+.parallax-image:nth-child(2) {
+ background-size: contain;
+ height: 10vh;
+ left: 60%; /* Adjust the left position for the second image */
+ transform: translate(-50%, -50%);
+ background-image: url('/Pages/images/note.png'); /* Replace with your image URL */
+}
+
+.parallax-image.show {
+ opacity: 1;
+}

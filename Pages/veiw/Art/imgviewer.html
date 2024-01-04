@@ -3,14 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Pinterest-like Layout</title>
+  <link rel="stylesheet" href="/Pages/util/preloader.css">
   <link rel="stylesheet" href="/Pages/veiw/Art/imgviewer.css">
   <link rel="stylesheet" href="/Pages/util/nav.css">
+  <link rel="stylesheet" href="/Pages/util/footer.css">
   
+  <nav class="navbar">
+    <img src="/Pages/images/nobg.png" class="logo">
+    <ul>
+        <li><a href="/Pages/home/home.html">Home</a></li>
+        <li>
+            <a href="#">View ▾</a>
+            <ul class="dropdown">
+             <li><a href="/Pages/veiw/player/music_Fyp.html">Songs</a></li>   
+             <li><a href="/Pages/veiw/Art/imgviewer.html">Visual Art</a></li>    
+            </ul>      
+           </li>
+        <li>
+            <a href="#">Create ▾</a>
+            <ul class="dropdown">
+             <li><a href="/Pages/create/MusicEditor/musiceditor.html">Music</a></li>   
+             <li><a href="/Pages/create/art.html">Art</a></li>    
+            </ul>      
+           </li>
+        <li><a herf="#">About</a></li>
+
+        
+    </ul>
+</nav>
 
 </head>
 <body>
 
-
+  <div id="preloader"></div>
 
 
 <div class="container">
@@ -56,4 +81,24 @@
   <script type="module" src="/Pages/util/loading.js"></script>
   <script src="imgRefresh.js"></script>
 </body>
+
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>We want every artist to have equal exposure.</p>
+          <!-- Other information about your website/company -->
+      </div>
+      <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: somal_sukhdeep@khalsaschool.ca</p>
+          <p>Phone: 604-456-7890</p>
+          <!-- Other contact information -->
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2023 Artify.com | Designed by Sukhdeep Kaur Somal
+  </div>
+</footer>
+
 </html>

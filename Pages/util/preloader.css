@@ -1,5 +1,5 @@
 #preloader{
-    background: #ffffff url(/Pages/images/preloader.gif) no-repeat center;
+    background: #333 url(/Pages/images/preloader.gif) no-repeat center;
     background-size: 10%;
     height: 100vh;
     width: 100%;

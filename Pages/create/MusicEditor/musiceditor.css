@@ -4,25 +4,27 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f3;
+    background-color: #333333;
   }
   
   .audio-trimmer {
     text-align: center;
-    background-color: #fff;
+    background-color: #444;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
     max-width: 400px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     
+    
   }
   
   h1 {
     margin-bottom: 20px;
+    
   }
   
   .upload-label {
@@ -32,6 +34,7 @@ body {
   }
   
   input[type="file"] {
+    
     display: block;
     margin: 0 auto 20px;
   }
@@ -57,6 +60,7 @@ body {
   input[type="number"] {
     width: 70px;
     text-align: center;
+    background-color: #444;
   }
   
   button {
@@ -64,18 +68,17 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #3498db;
-    color: white;
+    background-color: #2e2e2e;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: #2980b9;
+    background-color: #1d1d1d;
   }
   
   .audio-player {
     margin-bottom: 20px;
   }
-  

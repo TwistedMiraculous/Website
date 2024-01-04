@@ -33,7 +33,10 @@ nav {
     color: #000000;
     padding: 10px ;
 }
-  
+
+.navbar .logo{
+    width: 70px;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -47,7 +50,7 @@ li {
   
 a {
     text-decoration: none;
-    color: #000000;
+    color: #cccccc;
     font-weight: bold;
     transition: 0.3s;
 }

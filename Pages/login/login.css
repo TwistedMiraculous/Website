@@ -10,10 +10,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("/Pages/images/wallpaper.gif") no-repeat;  
+    background: #111;  /*url("/Pages/images/wallpaper.gif") no-repeat; */
     background-size: cover;
    
 }
+.logo {
+    position: absolute;
+    height: 20vh; /* Set the height based on 20% of the viewport height */
+    top: 20px; /* Adjust as needed */
+    left: 50%; /* Positions the logo in the center horizontally */
+    transform: translateX(-50%); /* Centers the logo horizontally */
+    z-index: 1; /* Ensures the logo stays on top */
+   }
+
 
 .wrapper {
     width: 420px;
@@ -114,6 +123,22 @@ body {
     text-decoration: underline;
 }
 
+.wrapper .login-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link p a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0 15px;
+}
+
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
 
 
 

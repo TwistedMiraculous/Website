@@ -1,5 +1,5 @@
 *{
-  
+    background-color: black;
 }
 .hero {
  background-image: url('/Pages/images/hero.jpg');
@@ -8,6 +8,7 @@
  background-position: center; /* Center the background image */
  width: 100%; /* Adjust width as needed */
  height: 100%; /* Take up full height of the parent */
+ 
 }
 .container {
  background-color: black;

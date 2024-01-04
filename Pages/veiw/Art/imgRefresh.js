@@ -4,8 +4,11 @@ window.onload = function() {
     '/Pages/veiw/Art/imgs/img2.jpg',
     '/Pages/veiw/Art/imgs/img3.jpg',
     '/Pages/veiw/Art/imgs/img4.jpg',
-    '/Pages/veiw/Art/imgs/img5.jpg'
-    
+    '/Pages/veiw/Art/imgs/img5.jpg',
+    '/Pages/veiw/Art/imgs/img3.jpg',
+    '/Pages/veiw/Art/imgs/img4.jpg',
+    '/Pages/veiw/Art/imgs/img5.jpg',
+    '/Pages/veiw/Art/imgs/img2.jpg'
     // Add more image URLs as needed
   ];
 

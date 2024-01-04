@@ -1,23 +1,29 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+//login.js
 
-  const username = document.getElementById('usernameField').value;
-  const password = document.getElementById('passwordField').value;
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-  // Define user credentials
-  const users = [
-      { username: 'user1', password: 'password1' },
-      { username: 'user2', password: 'password2' }
-      // Add more users if needed
-  ];
+            const username = document.getElementById('usernameField').value;
+            const password = document.getElementById('passwordField').value;
 
-  // Checking if username and password match any user's credentials
-  const authenticatedUser = users.find(user => user.username === username && user.password === password);
+            // Retrieve users from localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
 
-  if (authenticatedUser) {
-      alert(`${authenticatedUser.username} has signed in.`);
-      window.location.href = '/Pages/home/home.html'; // Redirect on successful login
-  } else {
-      alert('Invalid username or password. Please try again.');
-  }
+            // Checking if username and password match any user's credentials
+            const authenticatedUser = users.find(user => user.username === username && user.password === password);
+
+            if (authenticatedUser) {
+                alert(`${authenticatedUser.username} has signed in.`);
+                window.location.href = '/Pages/home/home.html'; // Redirect on successful login
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    } else {
+        console.error("Login form element not found.");
+    }
 });
+

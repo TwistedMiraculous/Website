@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="/Pages/login/login.css">
     <link rel="stylesheet" href="/Pages/util/preloader.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,36 +17,29 @@
 
     <img src="/Pages/images/logo.jpg" class="logo">
     <div class="overlay"></div>
-   
+
     <div class="wrapper">
         
-        <form id="loginForm">
-            <h1>Login</h1>
+        <form id="signupForm">
+            <h1>Sign Up</h1>
             <div class="input-box">
-                <input type="text" id="usernameField" placeholder="Username" required>
-                <i class='bx bx-user-circle'></i>
+                <input type="text" id="newUsername" placeholder="New Username" required>
             </div>
     
             <div class="input-box">
-                <input type="password" id="passwordField" placeholder="Password" required>
-                <i class='bx bx-lock'></i>
+                <input type="password" id="newPasswordField" placeholder="New Password" required>
             </div>
     
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot Password</a>
-            </div>
+            <button type="submit" class="btn">Sign Up</button>
     
-            <button type="submit" class="btn">Login</button>
-    
-            <div class="register-link">
-                <p>Don't have an account? <a href="/Pages/login/signup.html">Register</a></p>
+            <div class="login-link">
+                <p>Already have an account? <a href="/Pages/login/login.html">Login</a></p>
             </div>
         </form>
     </div>
     <script type="module" src="/Pages/util/loading.js"></script>
     <script type="module" src="/Pages/login/login.js"></script>
-
+    <script type="module" src="/Pages/login/signup.js"></script>
 
 </body>
 

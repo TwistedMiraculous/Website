@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="/Pages/util/preloader.css">
     <link rel="stylesheet" href="/Pages/util/nav.css">
-    <link rel="stylesheet" href="/Pages/home/home.css">
+    <link rel="stylesheet" href="/Pages/contactus/contactus.css">
     <link rel="stylesheet" href="/Pages/util/footer.css">
     
     <nav class="navbar">
@@ -27,45 +27,41 @@
                  <li><a href="/Pages/create/MusicEditor/musiceditor.html">Music</a></li>   
                  <li><a href="/Pages/create/art.html">Art</a></li>    
                 </ul>      
-               </li>
-               <li><a href="/Pages/contactus/contactus.html">Contact Us</a></li>
+            </li>
+            <li><a href="/Pages/contactus/contactus.html">Contact Us</a></li>
     
             
         </ul>
     </nav>
 </head>
 
-
 <body>
     <div id="preloader"></div>
 
-    <div class="container">
-
-        
-        <div class="hero"></div>
-
-        <div class="text-box">
-            <h2>Create. Sing. Enjoy.</h2>
-            <p>Artify is the app an artist needs to create breathtaking art and funky music.</p>
-        </div> 
-        <div class="parallax-container">
-            <div class="parallax-image"></div>
-            <div class="parallax-image"></div>
-        </div>
-
-
-
-
+    <div class="box">
+        <div class="form-container">
+            <form class="form">
+              <div class="form-group">
+                <label for="email">Company Email</label>
+                <input required="" name="email" id="email" type="text">
+              </div>
+              <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea required="" cols="50" rows="10" id="textarea" name="textarea">          </textarea>
+              </div>
+              <button type="submit" class="form-submit-btn">Submit</button>
+            </form>
+          </div>
     </div>
-    
-    
+
 
     
-      
-    
-    <script type="module" src="/Pages/home/parallex.js"></script>
     <script type="module" src="/Pages/util/loading.js"></script>
-</body>
+
+
+
+
+
    <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
@@ -84,5 +80,5 @@
             &copy; 2023 Artify.com | Designed by Sukhdeep Kaur Somal
         </div>
     </footer>
-
+</body>
 </html>

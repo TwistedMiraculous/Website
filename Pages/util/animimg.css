@@ -1,0 +1,43 @@
+.masonry-tile_container {
+    position: relative;
+    width: fit-content;
+    margin: 100px;
+    background-color: aliceblue;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.masonry-tile__content {
+    position: relative;
+}
+
+.text-subheading,
+.text-heading {
+    color: rgb(72, 48, 132);
+    background-color: transparent;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    z-index: 1;
+}
+
+.text-heading {
+    top: 30px;
+}
+.masonry-tile__content img{
+
+    border-radius: 5%;
+}
+.masonry-tile__content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
+    transition: transform 0.3s ease;
+}
+
+/* Add a hover effect to scale the image */
+.masonry-tile_container:hover .masonry-tile__content img {
+    transform: scale(1.1);
+}

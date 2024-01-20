@@ -24,12 +24,12 @@
 }
 
 .text-box h2 {
- color: white; /* Set heading color to white */
+ color: rgb(255, 255, 255); /* Set heading color to white */
 }
 
 .text-box p {
 
- color: white; /* Set paragraph color to white */
+ color: rgb(173, 173, 173); /* Set paragraph color to white */
 }
 
 .parallax-container {

@@ -63,7 +63,7 @@
  height: 10vh;
  left: 60%; /* Adjust the left position for the second image */
  transform: translate(-50%, -50%);
- background-image: url('/Pages/images/note.png'); /* Replace with your image URL */
+ background-image: url('/Pages/images/note.png');
 }
 
 .parallax-image.show {
